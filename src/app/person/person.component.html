@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="text-center">
+        <h3>Single Page Application</h3>
+    </div>
+    <hr/>
+    <div class="float-right">
+        <button type="button  " class="btn btn-success" (click)="addButton()">Add User</button>
+    </div>
+    <hr/>
+    <div>
+        <div class="table-responsive-md">
+            <table class="table">
+                <caption>Person Details</caption>
+            
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Email</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  class="table-info " *ngFor="let person of personService.persons; index as i;">
+                    <th scope="row">{{i+1}}</th>
+                    <td><a (click)="setPersonId(person.id)" [routerLink]="['/edit',person.name]"  >{{person.name}}</a></td>
+                    <td>{{person.age}}</td>
+                    <td>{{person.contact}}</td>
+                    <td>{{person.email}}</td>
+                    <td class="float-right text-danger" (click)="deletePerson(person.id)"><i class="fas fa-minus-square"></i> </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>             
+    </div>
+</div>

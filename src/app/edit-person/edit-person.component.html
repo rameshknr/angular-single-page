@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="text-center">
+      <h3>Single Page Application</h3>
+    </div>
+      <div>
+          <div>
+            <h4 class="text-danger">Update User</h4>
+            <button type="button" class="btn btn-info float-right" (click)="returnHome()">Go Back</button>
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+              </div>
+              <input type="text"  #name  class="form-control" value="{{person.name}}" aria-label="name" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Age</span>
+              </div>
+              <input type="number"  #age  class="form-control" value="{{person.age}}" aria-label="email" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Contact Number</span>
+              </div>
+              <input type="number"  #contact  class="form-control" value="{{person.contact}}" aria-label="email" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+              </div>
+              <input type="email"  #email  class="form-control" value="{{person.email}}" aria-label="email" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class=" float-right">
+              <button type="button float-right" class="btn btn-success" (click)="editPerson(name.value,age.value,contact.value,email.value)">Update Person</button>
+          </div>
+      </div>
+  
+  </div>
+  

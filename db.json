@@ -1,0 +1,91 @@
+{
+  "courses": [
+    {
+      "id": 2,
+      "title": "Angular",
+      "summary": "Framework from Google!!"
+    },
+    {
+      "id": 3,
+      "title": "Spring",
+      "summary": "Framework making Java Easy"
+    },
+    {
+      "id": 4,
+      "title": "Git",
+      "summary": "Source Code Management!!"
+    },
+    {
+      "id": 5,
+      "title": "MongoDB",
+      "summary": "NoSQL db"
+    },
+    {
+      "title": "Java",
+      "summary": "Basic Programming Language from Oracle",
+      "id": 6
+    }
+  ],
+  "person": [
+    {
+      "id": 1,
+      "name": "Ramesh",
+      "age": 26,
+      "contact": 9874563210,
+      "email": "r@hotmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Santhosh",
+      "age": 21,
+      "contact": 7854129632,
+      "email": "sandy@yahoo.com"
+    }
+  ],
+  "todo": [
+    {
+      "id": 2,
+      "title": "Complete project",
+      "completed": false
+    },
+    {
+      "title": "eat",
+      "completed": true,
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Kafka",
+      "author": "linkedIn",
+      "id": 2
+    },
+    {
+      "title": "Apache",
+      "author": "Java",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "body": "Now it is with Apache",
+      "postId": "2",
+      "id": 2
+    },
+    {
+      "body": "Open source",
+      "postId": "3",
+      "id": 3
+    }
+  ]
+}
